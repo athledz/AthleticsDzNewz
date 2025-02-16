@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0px 20px;
     z-index: 1000;
 }
 
@@ -124,9 +124,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #d52020;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    background-color: #2d5e25;
+
 }
 
 .nav-links {
@@ -188,5 +188,54 @@ body {
 
     .menu-item {
         display: block; /* Afficher les liens dans le menu hamburger */
+    }
+}
+/* Style pour le conteneur du navbar */
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Distribue l'espace entre le logo et les liens */
+    align-items: center;
+    padding: 10px;
+    background-color: #1e83e7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajouter de l'espace autour du logo */
+.logo {
+    font-size: 2.5rem; /* Agrandir légèrement le texte du logo */
+    font-weight: bold;
+    margin-right: 400px; /* Éloigner le logo des éléments de navigation */
+}
+
+/* Style pour les liens de navigation */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Espacement entre les liens */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Pour les écrans petits (mobiles) */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column; /* Empiler les éléments verticalement */
+        align-items: flex-start; /* Aligner les éléments vers la gauche */
+    }
+
+    .logo {
+        margin-bottom: 20px; /* Ajouter de l'espace sous le logo sur mobile */
+        margin-right: 0; /* Réinitialiser la marge droite sur mobile */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
     }
 }
