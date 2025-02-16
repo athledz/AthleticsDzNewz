@@ -239,3 +239,40 @@ body {
         gap: 10px;
     }
 }
+/* Styles pour les grands écrans */
+.section.home {
+    text-align: center; /* Centrer le texte */
+}
+
+.mobile-nav {
+    display: none; /* Masquer la navigation mobile par défaut */
+}
+
+.nav-links-horizontal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Afficher les liens en ligne */
+    justify-content: center; /* Centrer les liens horizontalement */
+    gap: 15px; /* Ajouter un espace entre les liens */
+}
+
+.nav-links-horizontal li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Pour les écrans petits (mobiles) */
+@media (max-width: 768px) {
+    /* Afficher la navigation mobile */
+    .mobile-nav {
+        display: block; /* Afficher les liens sous le texte */
+        margin-top: 20px; /* Ajouter de l'espace entre le texte et les liens */
+    }
+
+    /* Masquer les liens du navbar principal sur mobile */
+    .navbar .nav-links {
+        display: none; /* Masquer les liens dans le header */
+    }
+}
