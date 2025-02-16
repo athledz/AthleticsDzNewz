@@ -34,10 +34,11 @@ body {
 .navbar .nav-links {
     list-style: none;
     display: flex;
+    gap: 10px; /* Espace entre les liens */
 }
 
 .navbar .nav-links li {
-    margin-left: 20px;
+    margin-left: 0; /* Supprime la marge sur mobile */
 }
 
 .navbar .nav-links a {
@@ -51,9 +52,33 @@ body {
     color: #ecf0f1;
 }
 
+/* Responsive Design pour la barre de navigation */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .nav-links li {
+        text-align: center;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .navbar .nav-links a {
+        padding: 8px 10px;
+        display: block;
+    }
+}
+
 /* Sections Principales */
 .section {
-    padding: 100px 20px;
+    padding: 50px 20px; /* Réduit l'espace pour les petits écrans */
     text-align: center;
 }
 
@@ -76,17 +101,33 @@ body {
 }
 
 .section img {
-    width: 150px;
-    height: 150px;
+    width: 100%; /* Ajuste automatiquement la taille de l'image */
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
+}
+
+/* Responsive Design pour les sections */
+@media (max-width: 768px) {
+    .section {
+        padding: 30px 15px; /* Moins d'espace sur mobile */
+    }
+
+    .section h1, .section h2 {
+        font-size: 1.5rem; /* Réduit la taille du texte */
+    }
+
+    .section img {
+        max-width: 150px; /* Limite la taille de l'image sur mobile */
+        margin: 0 auto;
+    }
 }
 
 /* Formulaire de Contact */
 #contact-form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 100%; /* Adapte le formulaire à la largeur de l'écran */
     margin: 0 auto;
 }
 
@@ -95,6 +136,7 @@ body {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%; /* Remplit toute la largeur disponible */
 }
 
 #contact-form button {
@@ -104,6 +146,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%; /* Bouton plein écran sur mobile */
 }
 
 #contact-form button:hover {
