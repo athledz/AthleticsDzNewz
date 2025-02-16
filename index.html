@@ -1,72 +1,106 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Athletics Algeria News</title>
+    <title>Athletics News</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./png-transparent-computer-icons-track-and-field-sports-text-logo-running.png">
 </head>
 <body>
-    <!-- Barre de Navigation -->
+    <!-- Header -->
+    <!-- Header -->
+<!-- Header -->
+<!-- Header -->
+<header>
     <nav class="navbar">
-        <div class="logo">Athletics Algeria News</div>
-        <ul class="nav-links">
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#news">Actualités</a></li>
-            <li><a href="#athletes">Athlètes</a></li>
-            <li><a href="#events">Événements</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger-menu">
+            &#9776; <!-- Unicode pour les trois lignes horizontales -->
+        </button>
+        <!-- Contenu du Navbar -->
+        <div class="nav-container" id="nav-container">
+            <div class="logo">Athletics News</div>
+            <ul class="nav-links">
+                <li class="menu-item"><a href="#home">Home</a></li>
+                <li class="menu-item"><a href="#subscribe">Subscribe</a></li>
+                <li class="menu-item"><a href="#news">News</a></li>
+                <li class="menu-item"><a href="#events">Events</a></li>
+                <li class="menu-item"><a href="#performance">Performance</a></li>
+                <li class="menu-item"><a href="#forum">Forum</a></li>
+                <li class="menu-item"><a href="#stats">Stats</a></li>
+                <li class="menu-item"><a href="#results">Results</a></li>
+            </ul>
+        </div>
     </nav>
+</header>
 
-    <!-- Contenu Principal -->
+    <!-- Main Content -->
     <main>
+        <!-- Home Section -->
         <section id="home" class="section home">
-            <h1>Bienvenue sur Athletics Algeria News</h1>
-            <p>Retrouvez toutes les dernières actualités de l'athlétisme algérien.</p>
+            <h1>Welcome to Athletics News</h1>
+            <p>Stay updated with the latest in athletics.</p>
+        </section>
+        
+        
+
+        <!-- Subscribe Section -->
+        <section id="subscribe" class="section subscribe">
+            <h2>Subscribe to Our Magazine</h2>
+            <p>Get exclusive access to our print and digital editions.</p>
+            <button>Subscribe Now</button>
         </section>
 
+        <!-- News Section -->
         <section id="news" class="section news">
-            <h2>Actualités Récents</h2>
+            <h2>All Athletics News</h2>
             <article>
-                <h3>Victoire historique à la Coupe du Monde</h3>
-                <p>Date : 15 Octobre 2023</p>
-                <p>L'équipe nationale d'athlétisme a remporté une médaille d'or lors de la dernière coupe du monde.</p>
+                <h3>Latest Interview: John Doe</h3>
+                <p>Date: October 15, 2023</p>
+                <p>John Doe discusses his journey in athletics...</p>
             </article>
         </section>
 
-        <section id="athletes" class="section athletes">
-            <h2>Nos Athlètes Étoiles</h2>
-            <div class="athlete">
-                <img src="https://via.placeholder.com/150" alt="Athlete 1">
-                <h3>Amine Laabidi</h3>
-                <p>Sprinteur professionnel</p>
-            </div>
-        </section>
-
+        <!-- Events Section -->
         <section id="events" class="section events">
-            <h2>Prochains Événements</h2>
+            <h2>Upcoming Events</h2>
             <article>
-                <h3>Championnat National d'Athlétisme</h3>
-                <p>Date : 20 Novembre 2023</p>
-                <p>Lieu : Stade Mustapha Tchaker, Blida</p>
+                <h3>Diamond League Finals</h3>
+                <p>Date: November 10, 2023</p>
+                <p>Location: Zurich, Switzerland</p>
             </article>
         </section>
 
-        <section id="contact" class="section contact">
-            <h2>Contactez-nous</h2>
-            <form id="contact-form">
-                <input type="text" placeholder="Nom" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
+        <!-- Performance Section -->
+        <section id="performance" class="section performance">
+            <h2>Athlete Insights</h2>
+            <p>Tips for improving your marathon training...</p>
+        </section>
+
+        <!-- Forum Section -->
+        <section id="forum" class="section forum">
+            <h2>Join the Discussion</h2>
+            <p>Ask questions, share tips, and connect with other athletes.</p>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="section stats">
+            <h2>AW Standards</h2>
+            <p>Explore our comprehensive statistics database.</p>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="section results">
+            <h2>Recent Results</h2>
+            <p>Check out the latest results from overseas track and field events.</p>
         </section>
     </main>
 
-    <!-- Script JavaScript -->
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Athletics News. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

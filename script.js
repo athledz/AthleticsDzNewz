@@ -13,3 +13,12 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
         alert('Veuillez remplir tous les champs.');
     }
 });
+// Sélectionner le bouton hamburger et le conteneur du navbar
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const navContainer = document.getElementById('nav-container');
+
+// Ajouter un gestionnaire d'événements au clic
+hamburgerMenu.addEventListener('click', () => {
+    // Alterner la classe "active" sur le nav-container
+    navContainer.classList.toggle('active');
+});

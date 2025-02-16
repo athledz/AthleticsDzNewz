@@ -34,11 +34,10 @@ body {
 .navbar .nav-links {
     list-style: none;
     display: flex;
-    gap: 10px; /* Espace entre les liens */
 }
 
 .navbar .nav-links li {
-    margin-left: 0; /* Supprime la marge sur mobile */
+    margin-left: 20px;
 }
 
 .navbar .nav-links a {
@@ -52,33 +51,9 @@ body {
     color: #ecf0f1;
 }
 
-/* Responsive Design pour la barre de navigation */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar .nav-links {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navbar .nav-links li {
-        text-align: center;
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    .navbar .nav-links a {
-        padding: 8px 10px;
-        display: block;
-    }
-}
-
 /* Sections Principales */
 .section {
-    padding: 50px 20px; /* Réduit l'espace pour les petits écrans */
+    padding: 100px 20px;
     text-align: center;
 }
 
@@ -101,33 +76,17 @@ body {
 }
 
 .section img {
-    width: 100%; /* Ajuste automatiquement la taille de l'image */
-    height: auto;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-}
-
-/* Responsive Design pour les sections */
-@media (max-width: 768px) {
-    .section {
-        padding: 30px 15px; /* Moins d'espace sur mobile */
-    }
-
-    .section h1, .section h2 {
-        font-size: 1.5rem; /* Réduit la taille du texte */
-    }
-
-    .section img {
-        max-width: 150px; /* Limite la taille de l'image sur mobile */
-        margin: 0 auto;
-    }
 }
 
 /* Formulaire de Contact */
 #contact-form {
     display: flex;
     flex-direction: column;
-    max-width: 100%; /* Adapte le formulaire à la largeur de l'écran */
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -136,7 +95,6 @@ body {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%; /* Remplit toute la largeur disponible */
 }
 
 #contact-form button {
@@ -146,9 +104,89 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%; /* Bouton plein écran sur mobile */
 }
 
 #contact-form button:hover {
     background-color: #34495e;
+}
+/* ----masquer les éléments de navigation */
+/* Style pour le menu hamburger */
+.hamburger {
+    display: none; /* Masqué par défaut */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #d52020;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Cacher les éléments de navigation sur les grands écrans */
+.menu-item {
+    display: none; /* Masquer les liens par défaut */
+}
+
+/* Afficher les éléments de navigation sur les grands écrans */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex; /* Afficher les liens en ligne */
+    }
+
+    .menu-item {
+        display: block; /* Afficher les liens dans le navbar */
+    }
+}
+
+/* Pour les écrans petits (mobiles) */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Afficher le bouton hamburger */
+    }
+
+    .nav-container {
+        display: none; /* Masquer le nav-container par défaut */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container.active {
+        display: flex; /* Afficher le nav-container lorsque le menu est actif */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-item {
+        display: block; /* Afficher les liens dans le menu hamburger */
+    }
 }
