@@ -232,4 +232,51 @@ footer p {
         font-weight: bold;
         font-size: 1rem;
     }
+}/* Aligner tout le contenu à gauche */
+body {
+    text-align: left; /* Applique l'alignement à gauche par défaut */
+    font-family: Arial, sans-serif;
+    line-height: 1.0;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles spécifiques pour les sections du programme */
+.day-section {
+    margin-bottom: 10px; /* Espacement entre les sections */
+    text-align: left; /* Forcer l'alignement à gauche */
+}
+
+.day-section h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left; /* Assure que les titres sont aussi alignés à gauche */
+}
+
+.event-list {
+    list-style: none; /* Supprimer les puces par défaut */
+    padding: 0; /* Supprimer le padding interne */
+    margin: 0; /* Supprimer la marge externe */
+    text-align: left; /* Assure que la liste est alignée à gauche */
+}
+
+.event-list li {
+    margin: 5px 0; /* Ajouter un espacement vertical entre les éléments */
+    font-size: 1rem;
+    text-align: left; /* Assure que chaque élément de la liste est aligné à gauche */
+}
+
+/* Style pour D Hept (rose) */
+.d-hept {
+    color: #ff69b4; /* Rose vif */
+    font-weight: bold;
+}
+
+/* Style pour H Hept (bleu) */
+.h-hept {
+    color: #0074d9; /* Bleu ciel */
+    font-weight: bold;
 }
