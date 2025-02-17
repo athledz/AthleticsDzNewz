@@ -179,4 +179,57 @@ footer p {
         width: 100%; /* Les boutons prennent toute la largeur */
         text-align: center;
     }
+}/* Masquer les liens par défaut */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+/* Style pour le bouton hamburger */
+.hamburger {
+    display: none; /* Masqué par défaut */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Pour les petits écrans (mobiles) */
+@media (max-width: 768px) {
+    /* Afficher le bouton hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* Masquer les liens par défaut */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        position: absolute;
+        top: 60px; /* Position sous le navbar */
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Afficher les liens lorsque le menu est actif */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Style des liens dans le menu hamburger */
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 1rem;
+    }
 }
