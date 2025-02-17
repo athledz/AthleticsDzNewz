@@ -1,329 +1,46 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programme Championnat</title>
-    <style>
-        /* Styles globaux */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 50px;
-        }
-
-        h1, h3 {
-            text-align: center;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        th, td {
-            border: 1px solid #2781ee;
-            padding: 1px;
-            vertical-align: top;
-        }
-
-        th {
-            background-color: #4f9ae5;
-            color: rgb(116, 215, 17);
-            text-align: center;
-        }
-
-        .session {
-            background-color: hsl(211, 92%, 49%);
-            font-weight: bold;
-            color: #ffffff;
-            text-align: center;
-            padding: 1px;
-        }/* Style pour les lignes D Pentathlon */
-.ligne-d-pentathlon {
-    background-color: #ffe6f7; /* Fond rose pâle */
-}
-
-/* Style pour les lignes H Heptathlon */
-.ligne-h-heptathlon {
-    background-color: #9ed3eb; /* Fond bleu pâle */
-}
-
-.d-pentathlon {
-    color: #ff69b4; /* Rose pour D Pentathlon */
-    font-weight: bold;
-}
-
-.h-hept {
-    color: #0074d9; /* Bleu pour H Heptathlon */
-    font-weight: bold;
-}
-
-        .d-pentathlon {
-            color: #ae04a6; /* Rose */
-            font-weight: bold;
-        }
-
-        .h-hept {
-            color: #0484f4; /* Bleu */
-            font-weight: bold;
-        }.ligne-coloriee {
-    background-color: #e6aed8; /* Couleur de fond (par exemple, bleu clair) */
-    color: #000000;           /* Couleur du texte (noir) */
-}
-    </style>
+    <title>Athletics News - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Championnat d'Algérie Hivernal 2025</h1>
-    <h3>vendredi 21-samedi 22 - Février 2025 - Stade Annex, Alger</h3>
+    <!-- Header -->
+    <!-- Header -->
+<header>
+    <nav class="navbar">
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger-menu">&#9776;</button>
+        <div class="logo">Athletics Dz News</div>
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+             <li><a href="index.html">Home</a></li>
+            <li><a href="Program.html">Program</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="Newz.html">Newz</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Tableau Vendredi Matin -->
-    <div class="day-section">
-        <div class="session">Vendredi  -  MATIN</div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Heures</th>
-                    <th>Épreuves</th>
-                    <th>Sexe</th>
-                    <th>Catégorie</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>08:00</td>
-                    <td>10 000m Marche</td>
-                    <td>M</td>
-                    <td>Finale</td>
-                </tr>
-                <tr>
-                    <td>09:00</td>
-                    <td>60m Séries</td>
-                    <td>H</td>
-                    <td>Séries</td>
-                </tr>
-                <tr>
-                    <tr class="ligne-coloriee">
-                        <td>09:15</td>
-                        <td>60m Haies (0.84m)</td>
-                        <td>D</td>
-                        <td><span class="d-pentathlon">Pentathlon </span></td>
-                    
-                    
-                </tr>
-                <tr>
-                    <td>09:30</td>
-                    <td>60m Haies (0.84m)</td>
-                    <td>D</td>
-                    <td>Séries</td>
-                </tr>
-                <tr>
-                    <td>09:35</td>
-                    <td>Javelot (600g)</td>
-                    <td>D</td>
-                    <td>Finale</td>
-                </tr>
-                <tr>
-                    <tr class="ligne-coloriee">
-                        <td>09:45</td>
-                        <td>Hauteur</td>
-                        <td>D</td>
-                        <td><span class="d-pentathlon">Pentathlon </span></td>
-                </tr>
-                <tr>
-                    <td>09:45</td>
-                    <td>60m Haies (1.06m)</td>
-                    <td>H</td>
-                    <td>Séries</td>
-                </tr>
-                <tr>
-                    <td>09:50</td>
-                    <td>Perche</td>
-                    <td>D</td>
-                    <td>Finale</td>
-                </tr>
-                <tr class="ligne-h-heptathlon">
-                    <td>15:25</td>
-                    <td>Longueur</td>
-                    <td>H</td>
-                    <td><span class="h-hept">Heptathlon 3</span></td>
-                </tr>
-                <tr>
-                    <td>10:00</td>
-                    <td>60m</td>
-                    <td>D</td>
-                    <td>Séries</td>
-                <tr>
-                    <td>10:15</td>
-                    <td>60m</td>
-                    <td>H</td>
-                    <td>Séries</td>
-                <tr>
-                    <td>10:30</td>
-                     <td>600m</td>
-                    <td>D</td>
-                    <td>Séries</td>
-                <tr>
-                    <td>10:40</td>
-                    <td>Hauteur</td>
-                    <td>D</td>
-                    <td>Finale</td>
-                <tr>
-                    <td>10:30</td>
-                    <td>600m</td>
-                    <td>H</td>
-                    <td>Séries</td>
-                <tr>
-                    <td>10:40</td>
-                    <td>Disque(1kg)</td>
-                    <td>D</td>
-                    <td>Finale</td> 
-                        
-                    <tr class="ligne-h-heptathlon">
-                        <td>15:25</td>
-                        <td>Poids</td>
-                        <td>H</td>
-                        <td><span class="h-hept">Heptathlon 3</span></td>
-                    </tr>
+    <!-- Main Content -->
+    <main>
+        <section class="section news">
+            <h2>Athletics Dz News</h2>
+            <article>
+                <h3>Latest Interview: John Doe</h3>
+               
+               
+            </article>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Athletics Dz Newz. All rights reserved.</p>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-            </tbody>
-        </table>
-    </div>
-
-    <!-- Tableau Vendredi Après-midi -->
-    <div class="day-section">
-        <div class="session">Vendredi 21 Février 2025 - Après-Midi</div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Heures</th>
-                    <th>Épreuves</th>
-                    <th>Sexe</th>
-                    <th>Catégorie</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-                </tr>
-                <tr class="ligne-h-heptathlon">
-                    <td>16:20</td>
-                    <td>Hauteur</td>
-                    <td>H</td>
-                    <td><span class="h-hept">Heptathlon 4</span></td>
-                </tr>
-                <tr>
-                    
-                    <td>15:00</td>
-                    <td>Longueur</td>
-                    <td>D</td>
-                    <td><span class="d-pentathlon">Pentathlon 4</span></td>
-                </tr>
-                <tr>
-                    <td>15:05</td>
-                    <td>Marteau (4kg)</td>
-                    <td>D</td>
-                    <td>Finale</td>
-                </tr>
-                <tr>
-                    <td>15:20</td>
-                    <td>Hauteur</td>
-                    <td>H</td>
-                    <td>Finale</td>
-                </tr>
-                <tr>
-                    <td>15:25</td>
-                    <td>Poids (7.260kg)</td>
-                    <td>H</td>
-                    <td><span class="h-hept">Heptathlon 3</span></td>
-                </tr>
-                <tr>
-                    <td>15:30</td>
-                    <td>900m</td>
-                    <td>D</td>
-                    <td>Finale</td>
-                </tr>
-                <tr>
-                    <td>15:35</td>
-                    <td>Perche</td>
-                    <td>H</td>
-                    <td>Finale</td>
-                </tr>
-                <tr>
-                    <td>16:20</td>
-                    <td>Hauteur</td>
-                    <td>H</td>
-                    <td><span class="h-hept">Heptathlon 4</span></td>
-                </tr>
-                <tr>
-                    <td>17:45</td>
-                    <td>800m</td>
-                    <td>D</td>
-                    <td><span class="d-pentathlon">Pentathlon 5</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- Tableau Samedi Matin -->
-    <div class="day-section">
-        <div class="session">Samedi 22 Février 2025 - Matin</div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Heures</th>
-                    <th>Épreuves</th>
-                    <th>Sexe</th>
-                    <th>Catégorie</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>08:30</td>
-                    <td>10 000m Marche</td>
-                    <td>D</td>
-                    <td>Finale</td>
-                </tr>
-                <tr>
-                    <td>10:00</td>
-                    <td>Javelot (800g)</td>
-                    <td>H</td>
-                    <td>Finale</td>
-                </tr>
-                <tr>
-                    <td>10:00</td>
-                    <td>Triple-saut (10.81m)</td>
-                    <td>D</td>
-                    <td>Finale</td>
-                </tr>
-                <tr>
-                    <td>10:00</td>
-                    <td>60m Haies (1.06m)</td>
-                    <td>H</td>
-                    <td><span class="h-hept">Heptathlon 5</span></td>
-                </tr>
-                <tr>
-                    <td>10:45</td>
-                    <td>Perche</td>
-                    <td>H</td>
-                    <td><span class="h-hept">Heptathlon 6</span></td>
-                </tr>
-                <tr>
-                    <td>12:40</td>
-                    <td>1000m</td>
-                    <td>D</td>
-                    <td><span class="d-pentathlon">Pentathlon 7</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
