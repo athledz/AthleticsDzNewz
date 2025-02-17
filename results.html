@@ -39,15 +39,33 @@
             color: #ffffff;
             text-align: center;
             padding: 1px;
-        }
+        }/* Style pour les lignes D Pentathlon */
+.ligne-d-pentathlon {
+    background-color: #ffe6f7; /* Fond rose pâle */
+}
+
+/* Style pour les lignes H Heptathlon */
+.ligne-h-heptathlon {
+    background-color: #9ed3eb; /* Fond bleu pâle */
+}
+
+.d-pentathlon {
+    color: #ff69b4; /* Rose pour D Pentathlon */
+    font-weight: bold;
+}
+
+.h-hept {
+    color: #0074d9; /* Bleu pour H Heptathlon */
+    font-weight: bold;
+}
 
         .d-pentathlon {
-            color: #ff69b4; /* Rose */
+            color: #ae04a6; /* Rose */
             font-weight: bold;
         }
 
         .h-hept {
-            color: #0074d9; /* Bleu */
+            color: #0484f4; /* Bleu */
             font-weight: bold;
         }.ligne-coloriee {
     background-color: #e6aed8; /* Couleur de fond (par exemple, bleu clair) */
@@ -57,7 +75,7 @@
 </head>
 <body>
     <h1>Championnat d'Algérie Hivernal 2025</h1>
-    <h3>21 & 22 Février 2025 - Stade du 5 Juillet, Alger</h3>
+    <h3>vendredi 21-samedi 22 - Février 2025 - Stade Annex, Alger</h3>
 
     <!-- Tableau Vendredi Matin -->
     <div class="day-section">
@@ -85,10 +103,13 @@
                     <td>Séries</td>
                 </tr>
                 <tr>
-                    <td>09:15</td>
-                    <td>60m Haies (0.84m)</td>
-                    <td>D</td>
-                    <td>Pent 1</td>
+                    <tr class="ligne-coloriee">
+                        <td>09:15</td>
+                        <td>60m Haies (0.84m)</td>
+                        <td>D</td>
+                        <td><span class="d-pentathlon">Pentathlon </span></td>
+                    
+                    
                 </tr>
                 <tr>
                     <td>09:30</td>
@@ -103,10 +124,11 @@
                     <td>Finale</td>
                 </tr>
                 <tr>
-                    <td>09:45</td>
-                    <td>Hauteur</td>
-                    <td>D</td>
-                    <td>Pent 2</td>
+                    <tr class="ligne-coloriee">
+                        <td>09:45</td>
+                        <td>Hauteur</td>
+                        <td>D</td>
+                        <td><span class="d-pentathlon">Pentathlon </span></td>
                 </tr>
                 <tr>
                     <td>09:45</td>
@@ -120,18 +142,59 @@
                     <td>D</td>
                     <td>Finale</td>
                 </tr>
-                <tr class="ligne-coloriee">
-                    <td>09:55</td>
+                <tr class="ligne-h-heptathlon">
+                    <td>15:25</td>
                     <td>Longueur</td>
-                    <td>D</td>
-                    <td><span class="d-pentathlon">Pentathlon 7</span></td>
+                    <td>H</td>
+                    <td><span class="h-hept">Heptathlon 3</span></td>
                 </tr>
                 <tr>
                     <td>10:00</td>
                     <td>60m</td>
                     <td>D</td>
                     <td>Séries</td>
-                </tr>
+                <tr>
+                    <td>10:15</td>
+                    <td>60m</td>
+                    <td>H</td>
+                    <td>Séries</td>
+                <tr>
+                    <td>10:30</td>
+                     <td>600m</td>
+                    <td>D</td>
+                    <td>Séries</td>
+                <tr>
+                    <td>10:40</td>
+                    <td>Hauteur</td>
+                    <td>D</td>
+                    <td>Finale</td>
+                <tr>
+                    <td>10:30</td>
+                    <td>600m</td>
+                    <td>H</td>
+                    <td>Séries</td>
+                <tr>
+                    <td>10:40</td>
+                    <td>Disque(1kg)</td>
+                    <td>D</td>
+                    <td>Finale</td> 
+                        
+                    <tr class="ligne-h-heptathlon">
+                        <td>15:25</td>
+                        <td>Poids</td>
+                        <td>H</td>
+                        <td><span class="h-hept">Heptathlon 3</span></td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
             </tbody>
         </table>
     </div>
@@ -149,7 +212,16 @@
                 </tr>
             </thead>
             <tbody>
+                
+                </tr>
+                <tr class="ligne-h-heptathlon">
+                    <td>16:20</td>
+                    <td>Hauteur</td>
+                    <td>H</td>
+                    <td><span class="h-hept">Heptathlon 4</span></td>
+                </tr>
                 <tr>
+                    
                     <td>15:00</td>
                     <td>Longueur</td>
                     <td>D</td>
