@@ -139,4 +139,44 @@ footer p {
     .section.home p {
         font-size: 1rem;
     }
+}/* Styles pour les boutons */
+.mobile-buttons {
+    display: none; /* Masquer les boutons par défaut */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0074d9; /* Bleu ciel au survol */
+}
+
+/* Afficher les boutons sur les petits écrans */
+@media (max-width: 768px) {
+    /* Masquer les liens de navigation dans le header */
+    .nav-links {
+        display: none;
+    }
+
+    /* Afficher les boutons pour mobiles */
+    .mobile-buttons {
+        display: flex;
+        flex-direction: column; /* Empiler les boutons verticalement */
+    }
+
+    .button {
+        width: 100%; /* Les boutons prennent toute la largeur */
+        text-align: center;
+    }
 }
