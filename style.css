@@ -245,7 +245,7 @@ body {
 
 /* Styles spécifiques pour les sections du programme */
 .day-section {
-    margin-bottom: 10px; /* Espacement entre les sections */
+    margin-bottom: 0px; /* Espacement entre les sections */
     text-align: left; /* Forcer l'alignement à gauche */
 }
 
@@ -279,4 +279,154 @@ body {
 .h-hept {
     color: #0074d9; /* Bleu ciel */
     font-weight: bold;
+}
+/* style.css */
+
+/* General Styles */
+body {
+    font-family: sans-serif; /* Choose a suitable font */
+    margin: 0; /* Remove default body margins */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Dark gray text color */
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff; /* Example: Blue header */
+    color: white;
+    padding: 1rem 0; /* Add padding top and bottom */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space logo and nav links */
+    align-items: center; /* Vertically align items */
+    padding: 0 20px; /* Add padding to the left and right */
+    max-width: 960px; /* Set a maximum width for the navbar */
+    margin: 0 auto; /* Center the navbar */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px; /* Space between links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px; /* Add some padding around the link text */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white on hover */
+    border-radius: 5px; /* Add rounded corners on hover */
+}
+
+.hamburger {
+    display: none; /* Hide hamburger on larger screens */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 960px; /* Set a maximum width for the main content */
+    margin: 20px auto; /* Center the main content */
+}
+
+.news {
+    margin-bottom: 20px;
+}
+
+.news h2 {
+    color: #007bff; /* Example: Blue heading */
+    margin-bottom: 10px;
+}
+
+.news h3 {
+    margin-bottom: 5px;
+}
+
+.news article {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.news p {
+    margin-bottom: 10px;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent image from affecting text flow */
+    margin: 20px auto; /* Center the images */
+    border: 1px solid #ddd; /* Add a border to the image */
+    padding: 5px; /* Add padding to the image */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Add a subtle shadow */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Darker background for footer */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative; /* Ensure footer stays at the bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design (Example) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links on smaller screens */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 60px; /* Adjust top position as needed */
+        left: 0;
+        width: 100%;
+        background-color: #007bff; /* Same as header background */
+        text-align: center;
+    }
+
+    .nav-links.active { /* Show links when hamburger is clicked */
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Adjust margin for stacked links */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on smaller screens */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack logo and hamburger */
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
 }
