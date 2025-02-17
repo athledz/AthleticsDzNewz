@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Athletics News - Home</title>
+    <title>Athletics News - Results</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="short icon" href="./png-transparent-computer-icons-track-and-field-sports-text-logo-running.png">
+    <style>
+        /* Styles spécifiques pour le tableau des résultats */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            vertical-align: top;
+            width: 50%;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+        .session {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .category {
+            color: #3498db;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -22,38 +49,95 @@
     </header>
 
     <!-- Main Content -->
-    <!-- Main Content -->
+    <main>
+        <section class="section results">
+            <h2>Recent Results</h2>
+            <p>Check out the latest results from overseas track and field events.</p>
+        </section>
 
-<!-- Main Content -->
-<main>
-    <!-- Main Content -->
-<main>
-    <section class="section home">
-        <h1>Welcome to Athletics News</h1>
-        <p>Stay updated with the latest in athletics.</p>
-        <!-- Navigation horizontale pour les petits écrans -->
-        <nav class="mobile-nav">
-            <ul class="nav-links-horizontal">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="results.html">Results</a></li>
-            </ul>
-        </nav>
-    </section>
-</main>
-    <section class="section home">
-        <h1> Athletics Dz News</h1>
-        <p>the latest in athletics.</p>
-        <!-- Navigation horizontale pour les petits écrans -->
-        <nav class="mobile-nav">
-            <ul class="nav-links-horizontal">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="results.html">Results</a></li>
-            </ul>
-        </nav>
-    </section>
-</main>
+        <!-- Contenu spécifique : Championnat d'Algérie Hivernal 2025 -->
+        <section class="championship-results">
+            <h1>Championnat d'Algérie Hivernal 2025</h1>
+            <h3>21 & 22 Février 2025 - Stade du 5 Juillet, Alger</h3>
+            <table>
+                <!-- En-tête du tableau -->
+                <tr>
+                    <th>Vendredi 21 Février 2025</th>
+                    <th>Samedi 22 Février 2025</th>
+                </tr>
+                <!-- Matin du Vendredi vs Matin du Samedi -->
+                <tr>
+                    <!-- Vendredi Matin -->
+                    <td>
+                        <div class="session">Matin</div>
+                        08:00 - 10 000m Marche<br>
+                        09:00 - 60m H Séries<br>
+                        09:15 - 60m Haies (0.84m) <span class="category">D Pent 1</span><br>
+                        09:30 - 60m Haies (0.84m) <span class="category">D Séries</span><br>
+                        09:35 - Javelot (600g) <span class="category">D Finale</span><br>
+                        09:45 - Hauteur <span class="category">D Pent 2</span><br>
+                        09:45 - 60m Haies (1.06m) <span class="category">H Séries</span><br>
+                        09:50 - Perche <span class="category">D Finale</span><br>
+                        09:55 - Longueur <span class="category">H Hept 2</span><br>
+                        10:00 - 60m <span class="category">D Séries</span><br>
+                        10:15 - 60m <span class="category">H Séries</span><br>
+                        10:30 - 600m <span class="category">D Séries</span><br>
+                        10:40 - Hauteur <span class="category">D Finale</span><br>
+                        10:45 - 600m <span class="category">H Séries</span><br>
+                        10:55 - Disque (1kg) <span class="category">D Finale</span>
+                    </td>
+                    <!-- Samedi Matin -->
+                    <td>
+                        <div class="session">Matin</div>
+                        08:30 - 10 000m Marche <span class="category">D Finale</span><br>
+                        10:00 - Javelot (800g) <span class="category">H Finale</span><br>
+                        10:00 - Triple-saut (10.81m) <span class="category">D Finale</span><br>
+                        10:00 - 60m Haies (1.06m) <span class="category">H Hept 5</span><br>
+                        10:20 - 300m <span class="category">D Séries</span><br>
+                        10:40 - 300m <span class="category">H Séries</span><br>
+                        10:45 - Perche <span class="category">H Hept 6</span><br>
+                        11:00 - 1000m <span class="category">D Finale</span><br>
+                        11:10 - Marteau (7.260kg) <span class="category">H Finale</span><br>
+                        11:20 - 1000m <span class="category">H Finale</span><br>
+                        11:20 - Triple-saut (13m) <span class="category">H Finale</span><br>
+                        11:35 - Poids (4kg) <span class="category">D Finale</span><br>
+                        11:45 - 3000m <span class="category">D Finale</span><br>
+                        12:15 - 300m <span class="category">D Finale</span><br>
+                        12:30 - 300m <span class="category">H Finale</span><br>
+                        12:40 - 1000m <span class="category">H Hept 7</span>
+                    </td>
+                </tr>
+                <!-- Après-midi du Vendredi -->
+                <tr>
+                    <td>
+                        <div class="session">Après-Midi</div>
+                        15:00 - Longueur <span class="category">D Pent 4</span><br>
+                        15:05 - Marteau (4kg) <span class="category">D Finale</span><br>
+                        15:20 - Hauteur <span class="category">H Finale</span><br>
+                        15:25 - Poids (7.260kg) <span class="category">H Hept 3</span><br>
+                        15:30 - 900m <span class="category">D Finale</span><br>
+                        15:35 - Perche <span class="category">H Finale</span><br>
+                        15:45 - 600m <span class="category">H Finale</span><br>
+                        16:00 - Longueur <span class="category">H Finale</span><br>
+                        16:00 - 150m <span class="category">D Séries</span><br>
+                        16:15 - 150m <span class="category">H Séries</span><br>
+                        16:20 - Hauteur <span class="category">H Hept 4</span><br>
+                        16:30 - 300m Haies (0.76m) <span class="category">D Finale</span><br>
+                        16:35 - Disque (2kg) <span class="category">H Finale</span><br>
+                        16:45 - 300m Haies (0.91m) <span class="category">H Finale</span><br>
+                        17:00 - 3000m <span class="category">H Finale</span><br>
+                        17:05 - Poids (7.260kg) <span class="category">H Finale</span><br>
+                        17:15 - 150m <span class="category">D Finale</span><br>
+                        17:30 - Longueur <span class="category">D Finale</span><br>
+                        17:30 - 150m <span class="category">H Finale</span><br>
+                        17:45 - 800m <span class="category">D Pent 5</span><br>
+                        18:00 - 1000m <span class="category">D Séries</span><br>
+                        18:15 - 1000m <span class="category">H Séries</span>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
     </main>
 
     <!-- Footer -->
