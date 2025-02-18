@@ -1,502 +1,383 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Track & Field Schedule</title>
-    <style>
-        .ligne-hept {
-  background-color: #070ff1; /* Light gray background for heptathlon rows */
-  font-weight: bold; /* Make the text bold */
+<style>
+table {
+  width: 50%;
+  border-collapse: collapse;
 }
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
 
-        th, td {
-            border: 1px solid #ec0e0e;
-            padding: 8px;
-            text-align: left;
-        }
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
 
-        th {
-            background-color: #13e72f;
-        }
-
-        caption {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-    </style>
+th {
+  background-color: #f2f2f2;
+}
+</style>
 </head>
+<select name="type_epreuve">
+    <option value="finales">Finales</option>
+    <option value="series">Séries</option>
+    <option value="heptathlon">Heptathlon</option>
+    <option value="pentathlon">Pentathlon</option>
+  </select>
+  <select name="type_epreuve">
+    <option value="course">Course</option>
+    <option value="saut">Saut</option>
+    <option value="lancer">Lancer</option>
+    <option value="combinee">Combinée</option>
+  </select>
+  <select name="finales">
+    <option value="10000m_marche_dames">10 000m Marche - Dames</option>
+    <option value="10000m_marche_hommes">10 000m Marche - Hommes</option>
+    <option value="1000m_dames">1000m - Dames</option>
+    <option value="1000m_hommes">1000m - Hommes</option>
+    <option value="150m_dames">150m - Dames</option>
+    <option value="150m_hommes">150m - Hommes</option>
+    <option value="3000m_dames">3000m - Dames</option>
+    <option value="3000m_hommes">3000m - Hommes</option>
+    <option value="300m_dames">300m - Dames</option>
+    <option value="300m_hommes">300m - Hommes</option>
+    <option value="300m_haies_076m_dames">300m Haies (0.76m) - Dames</option>
+    <option value="300m_haies_091m_hommes">300m Haies (0.91m) - Hommes</option>
+    <option value="600m_dames">600m - Dames</option>
+    <option value="600m_hommes">600m - Hommes</option>
+    <option value="60m_dames">60m - Dames</option>
+    <option value="60m_hommes">60m - Hommes</option>
+    <option value="60m_haies_076m_dames">60m Haies (0.76m) - Dames</option>
+    <option value="60m_haies_106m_hommes">60m Haies (1.06m) - Hommes</option>
+    <option value="800m_dames">800m - Dames</option>
+    <option value="800m_hommes">800m - Hommes</option>
+    <option value="disque_1kg_dames">Disque (1kg) - Dames</option>
+    <option value="disque_2kg_hommes">Disque (2kg) - Hommes</option>
+    <option value="hauteur_dames">Hauteur - Dames</option>
+    <option value="hauteur_hommes">Hauteur - Hommes</option>
+    <option value="javelot_600g_dames">Javelot (600g) - Dames</option>
+    <option value="javelot_800g_hommes">Javelot (800g) - Hommes</option>
+    <option value="longueur_dames">Longueur - Dames</option>
+    <option value="longueur_hommes">Longueur - Hommes</option>
+    <option value="marteau_4kg_dames">Marteau (4kg) - Dames</option>
+    <option value="marteau_7260kg_hommes">Marteau (7.260kg) - Hommes</option>
+    <option value="perche_dames">Perche - Dames</option>
+    <option value="perche_hommes">Perche - Hommes</option>
+    <option value="poids_4kg_dames">Poids (4kg) - Dames</option>
+    <option value="poids_7260kg_hommes">Poids (7.260kg) - Hommes</option>
+    <option value="triple_saut_10_11m_dames">Triple-saut (10&11m) - Dames</option>
+    <option value="triple_saut_13m_hommes">Triple-saut (13m) - Hommes</option>
+  </select>
 <body>
 
     <table>
-        <caption>Morning Session</caption>
         <thead>
-            <tr>
-                <th>Time</th>
-                <th>Event</th>
-                <th>Gender</th>
-                <th>Stage</th>
-            </tr>
+          <tr>
+            <th>Type</th>
+            <th>Épreuve</th>
+            <th></th>
+          </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>08:00</td>
-                <td>10.000m Marche</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>09:00</td>
-                <td>60 m</td>
-                <td>H</td>
-                <td>Hept 1</td>
-            </tr>
-            <tr>
-                <td>09:15</td>
-                <td>60m Haies (0.84)</td>
-                <td>D</td>
-                <td>Pent 1</td>
-            </tr>
-            <tr>
-                <td>09:30</td>
-                <td>60m Haies (0.84)</td>
-                <td>D</td>
-                <td>Séries</td>
-            </tr>
-            <tr>
-                <td>09:35</td>
-                <td>Javelot (600g)</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>09:45</td>
-                <td>Hauteur</td>
-                <td>D</td>
-                <td>Pent 2</td>
-            </tr>
-            <tr>
-                <td>09:45</td>
-                <td>60m Haies (1.06m)</td>
-                <td>H</td>
-                <td>Séries</td>
-            </tr>
-            <tr>
-                <td>09:50</td>
-                <td>Perche</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>09:55</td>
-                <td>Longueur</td>
-                <td>H</td>
-                <td>Hept 2</td>
-            </tr>
-            <tr>
-                <td>10:00</td>
-                <td>300m</td>
-                <td>D</td>
-                <td>Séries</td>
-            </tr>
-            <tr>
-                <td>10:15</td>
-                <td>300m</td>
-                <td>H</td>
-                <td>Séries</td>
-            </tr>
-            <tr>
-                <td>10:30</td>
-                <td>600m</td>
-                <td>D</td>
-                <td>Séries</td>
-            </tr>
-            <tr>
-                <td>10:40</td>
-                <td>Hauteur</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>10:45</td>
-                <td>600m</td>
-                <td>H</td>
-                <td>Séries</td>
-            </tr>
-            <tr>
-                <td>10:55</td>
-                <td>Disque (1kg)</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>11:00</td>
-                <td>Poids (4kg)</td>
-                <td>D</td>
-                <td>Pent 3</td>
-            </tr>
-            <tr>
-                <td>11:00</td>
-                <td>60 Haies (0.76m)</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>11:10</td>
-                <td>60 Hales (1.06m)</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>11:25</td>
-                <td>300 Haies (0.76m)</td>
-                <td>D</td>
-                <td>Séries</td>
-            </tr>
-            <tr>
-                <td>11:40</td>
-                <td>300 Haies (0.91m)</td>
-                <td>H</td>
-                <td>Séries</td>
-            </tr>
+          <tr>
+            <td>Finales</td>
+            <td>10 000m Marche</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>10 000m Marche</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>1000m</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>1000m</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>150m</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>150m</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>3000m</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>3000m</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>300m</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>300m</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>300m Haies (0.76m)</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>300m Haies (0.91m)</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>600m</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>600m</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>60m</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>60m</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>60m Haies (0.76m)</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>60m Haies (1.06m)</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>800m</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>800m</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Disque (1kg)</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Disque (2kg)</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Hauteur</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Hauteur</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Javelot (600g)</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Javelot (800g)</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Longueur</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Longueur</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Marteau (4kg)</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Marteau (7.260kg)</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Perche</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Perche</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Poids (4kg)</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Poids (7.260kg)</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Triple-saut (10&11m)</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Finales</td>
+            <td>Triple-saut (13m)</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Séries</td>
+            <td>150m</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Séries</td>
+            <td>150m</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Séries</td>
+            <td>300m</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Séries</td>
+            <td>300m</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Séries</td>
+            <td>300m Haies (0.76m)</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Séries</td>
+            <td>300m Haies (0.91m)</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Séries</td>
+            <td>600m</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Séries</td>
+            <td>600m</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Séries</td>
+            <td>60m</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Séries</td>
+            <td>60m</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Séries</td>
+            <td>60m Haies (0.84m)</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Séries</td>
+            <td>60m Haies (1.06m)</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Heptathlon</td>
+            <td>60m</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Heptathlon</td>
+            <td>Longueur</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Heptathlon</td>
+            <td>Poids (7.260kg)</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Heptathlon</td>
+            <td>Hauteur</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Heptathlon</td>
+            <td>60m Haies (1.06m)</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Heptathlon</td>
+            <td>Perche</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Heptathlon</td>
+            <td>1000m</td>
+            <td>Hommes</td>
+          </tr>
+          <tr>
+            <td>Pentathlon</td>
+            <td>60m Haies (0.84m)</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Pentathlon</td>
+            <td>Hauteur</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Pentathlon</td>
+            <td>Poids (4kg)</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Pentathlon</td>
+            <td>Longueur</td>
+            <td>Dames</td>
+          </tr>
+          <tr>
+            <td>Pentathlon</td>
+            <td>800m</td>
+            <td>Dames</td>
+          </tr>
         </tbody>
-    </table>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Track & Field Schedule</title>
-    <style>
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        caption {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-
-    <table>
-        <caption>Afternoon Session</caption>
-        <thead>
-            <tr>
-                <th>Time</th>
-                <th>Event</th>
-                <th>Gender</th>
-                <th>Stage</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>15:00</td>
-                <td>Longueur</td>
-                <td>D</td>
-                <td>Pent 4</td>
-            </tr>
-            <tr>
-                <td>15:05</td>
-                <td>Marteau (4kg)</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>15:20</td>
-                <td>Hauteur</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>15:25</td>
-                <td>Poids (7.260kg)</td>
-                <td>H</td>
-                <td>Hept 3</td>
-            </tr>
-            <tr>
-                <td>15:30</td>
-                <td>600m</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>15:35</td>
-                <td>Perche</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>15:45</td>
-                <td>600m</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>16:00</td>
-                <td>Longueur</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>16:00</td>
-                <td>60 m</td>
-                <td>D</td>
-                <td>Séries</td>
-            </tr>
-            <tr>
-                <td>16:15</td>
-                <td>60 m</td>
-                <td>H</td>
-                <td>Séries</td>
-            </tr>
-            <tr>
-                <td>16:20</td>
-                <td>Hauteur</td>
-                <td>H</td>
-                <td>Hept 4</td>
-            </tr>
-            <tr>
-                <td>16:30</td>
-                <td>300m Haies (0.76)</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>16:35</td>
-                <td>Disque (2 kg)</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>16:45</td>
-                <td>300m Haies (0.91)</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>12:15</td>
-                <td>300 m</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>12:30</td>
-                <td>300 m</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>17:00</td>
-                <td>3000m</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>17:05</td>
-                <td>Poids (7.260kg)</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>17:15</td>
-                <td>60m</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>17:30</td>
-                <td>Longueur</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>17:30</td>
-                <td>60m</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>17:45</td>
-                <td>800m</td>
-                <td>D</td>
-                <td>Pent 5</td>
-            </tr>
-            <tr>
-                <td>18:00</td>
-                <td>800m</td>
-                <td>H</td>
-                <td>DTN/FAA</td>
-            </tr>
-            <tr>
-                <td>18:15</td>
-                <td>1000 m</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-        </tbody>
-    </table>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Track & Field Schedule</title>
-    <style>
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        caption {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-
-    <table>
-        <caption>Morning Session</caption>
-        <thead>
-            <tr>
-                <th>Time</th>
-                <th>Event</th>
-                <th>Gender</th>
-                <th>Stage</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>08:30</td>
-                <td>10.000m Marche</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>10:15</td>
-                <td>150m</td>
-                <td>D</td>
-                <td>Séries</td>
-            </tr>
-            <tr>
-                <td>10:30</td>
-                <td>150m</td>
-                <td>H</td>
-                <td>Séries</td>
-            </tr>
-            <tr>
-                <td>10:00</td>
-                <td>Javelot (800g)</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>10:00</td>
-                <td>Triple- saut (10&11m)</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>10:00</td>
-                <td>60m Haies (1.06m)</td>
-                <td>H</td>
-                <td>Hept 5</td>
-            </tr>
-            <tr>
-                <td>10:45</td>
-                <td>Perche</td>
-                <td>H</td>
-                <td>Hept 6</td>
-            </tr>
-            <tr>
-                <td>11:10</td>
-                <td>Marteau (7.260kg)</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>11:20</td>
-                <td>1000 m</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>11:20</td>
-                <td>Triple-saut (13 m)</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>11:35</td>
-                <td>Poids (4kg)</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>11:45</td>
-                <td>3000m</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>12:10</td>
-                <td>150m</td>
-                <td>D</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>12:20</td>
-                <td>150m</td>
-                <td>H</td>
-                <td>Finale</td>
-            </tr>
-            <tr>
-                <td>12:40</td>
-                <td>1000 m</td>
-                <td>H</td>
-                <td>Hept 7</td>
-            </tr>
-        </tbody>
-    </table>
-
-</body>
-</html>
+      </table>
