@@ -7,19 +7,25 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://github.com/athledz/resultas-.html</loc>
+		<loc>https://github.com/athledz/competitions.html</loc>
 		<lastmod>2025-02-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://github.com/athledz/programme.html</loc>
+		<loc>https://github.com/athledz/resultas.html</loc>
 		<lastmod>2025-02-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://github.com/athledz/athletes.html</loc>
+		<loc>https://github.com/athledz/page-3.html</loc>
+		<lastmod>2025-02-21</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://github.com/athledz/hivernal-2025.html</loc>
 		<lastmod>2025-02-21</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
