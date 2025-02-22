@@ -17,7 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="style/print.css?14-0-4-3" media="print" />
 		<link rel="stylesheet" type="text/css" href="style/style.css?14-0-4-3" media="screen,print" />
 		<link rel="stylesheet" type="text/css" href="style/template.css?14-0-4-3" media="screen" />
-		<link rel="stylesheet" type="text/css" href="pcss/imsearch.css?14-0-4-3-638757707594149234" media="screen,print" />
+		<link rel="stylesheet" type="text/css" href="pcss/imsearch.css?14-0-4-3-638758555525488160" media="screen,print" />
 		<script type="text/javascript" src="res/jquery.js?14-0-4-3"></script>
 		<script type="text/javascript" src="res/x5engine.js?14-0-4-3" data-files-version="14-0-4-3"></script>
 		<script type="text/javascript">
@@ -45,21 +45,21 @@
 <div class="label-wrapper">
 <div class="label-inner-wrapper">
 		<a class="label" href="index.html">
-Home 		</a>
+Home Page		</a>
 </div>
 </div>
-	</li><li class="imMnMnMiddle imPage" data-link-paths="/competitions.html">
+	</li><li class="imMnMnMiddle imPage" data-link-paths="/page-1.html">
 <div class="label-wrapper">
 <div class="label-inner-wrapper">
-		<a class="label" href="competitions.html">
-Competitions		</a>
+		<a class="label" href="page-1.html">
+Page 1		</a>
 </div>
 </div>
-	</li><li class="imMnMnMiddle imPage" data-link-paths="/resultas.html">
+	</li><li class="imMnMnMiddle imPage" data-link-paths="/page-2.html">
 <div class="label-wrapper">
 <div class="label-inner-wrapper">
-		<a class="label" href="resultas.html">
-Resultas		</a>
+		<a class="label" href="page-2.html">
+Page 2		</a>
 </div>
 </div>
 	</li><li class="imMnMnLast imPage" data-link-paths="/page-3.html">
@@ -74,7 +74,7 @@ x5engine.boot.push(function(){x5engine.initMenu('imHeader_imMenuObject_01',1000)
 $(function () {$('#imHeader_imMenuObject_01 ul li').each(function () {    var $this = $(this), timeout = 0, subtimeout = 0, width = 'none', height = 'none';        var submenu = $this.children('ul').add($this.find('.multiple-column > ul'));    $this.on('mouseenter', function () {        if($(this).parents('#imHeader_imMenuObject_01-menu-opened').length > 0) return;         clearTimeout(timeout);        clearTimeout(subtimeout);        $this.children('.multiple-column').show(0);        submenu.stop(false, false);        if (width == 'none') {             width = submenu.width();        }        if (height == 'none') {            height = submenu.height();            submenu.css({ overflow : 'hidden', height: 0});        }        setTimeout(function () {         submenu.css({ overflow : 'hidden'}).fadeIn(1).animate({ height: height }, 300, null, function() {$(this).css('overflow', 'visible'); });        }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imHeader_imMenuObject_01-menu-opened').length > 0) return;         timeout = setTimeout(function () {         submenu.stop(false, false);            submenu.css('overflow', 'hidden').animate({ height: 0 }, 300, null, function() {$(this).fadeOut(0); });            subtimeout = setTimeout(function () { $this.children('.multiple-column').hide(0); }, 300);        }, 250);    });});});
 
 </script>
-</div></div></div><div id="imHeader_imObjectTitle_03_wrapper" class="template-object-wrapper"><div id="imHeader_imCell_3" class="" > <div id="imHeader_imCellStyleGraphics_3"></div><div id="imHeader_imCellStyle_3" ><div id="imHeader_imObjectTitle_03"><span id ="imHeader_imObjectTitle_03_text" >Athletics Dz Newz</span > </div></div></div></div></div>
+</div></div></div><div id="imHeader_imObjectTitle_03_wrapper" class="template-object-wrapper"><div id="imHeader_imCell_3" class="" > <div id="imHeader_imCellStyleGraphics_3"></div><div id="imHeader_imCellStyle_3" ><div id="imHeader_imObjectTitle_03"><span id ="imHeader_imObjectTitle_03_text" >Title</span > </div></div></div></div><div id="imHeader_imObjectImage_04_wrapper" class="template-object-wrapper"><div id="imHeader_imCell_4" class="" > <div id="imHeader_imCellStyleGraphics_4"></div><div id="imHeader_imCellStyle_4" ><img id="imHeader_imObjectImage_04" src="images/empty-GT_imagec-1-.png" title="" alt="" /></div></div></div></div>
 					</div>
 					<div id="imStickyBarContainer">
 						<div id="imStickyBarGraphics"></div>
@@ -89,21 +89,21 @@ $(function () {$('#imHeader_imMenuObject_01 ul li').each(function () {    var $t
 <div class="label-wrapper">
 <div class="label-inner-wrapper">
 		<a class="label" href="index.html">
-Home 		</a>
+Home Page		</a>
 </div>
 </div>
-	</li><li class="imMnMnMiddle imPage" data-link-paths="/competitions.html">
+	</li><li class="imMnMnMiddle imPage" data-link-paths="/page-1.html">
 <div class="label-wrapper">
 <div class="label-inner-wrapper">
-		<a class="label" href="competitions.html">
-Competitions		</a>
+		<a class="label" href="page-1.html">
+Page 1		</a>
 </div>
 </div>
-	</li><li class="imMnMnMiddle imPage" data-link-paths="/resultas.html">
+	</li><li class="imMnMnMiddle imPage" data-link-paths="/page-2.html">
 <div class="label-wrapper">
 <div class="label-inner-wrapper">
-		<a class="label" href="resultas.html">
-Resultas		</a>
+		<a class="label" href="page-2.html">
+Page 2		</a>
 </div>
 </div>
 	</li><li class="imMnMnLast imPage" data-link-paths="/page-3.html">
